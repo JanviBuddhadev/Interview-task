@@ -1,0 +1,52 @@
+.tab-container {
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    rgba(255, 255, 255, 0.10);
+  box-shadow: 52px -52px 52px rgba(0, 0, 0, 0.1) inset,
+    -52px 52px 42px rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(90px);
+  bottom: 0;
+  height: 85%;
+  right: 0;
+  transform: translateY(-50%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  z-index: 1; /* Ensure the tabs appear above the video */
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
